@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reklam İzleme Sitesi</title>
+    <style>
+        /* Genel Stil */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4; /* Açık gri arka plan */
+            color: #333; /* Varsayılan metin rengi */
+        }
+
+        /* Header */
+        header {
+            background: #ffcc00; /* Sarı arka plan */
+            color: #000; /* Siyah metin rengi */
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Ana Bölüm */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff; /* Beyaz arka plan */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .ad-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        iframe {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin: 20px 0;
+            width: 300px;
+            height: 250px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #000; /* Siyah buton */
+            color: #ffcc00; /* Sarı metin */
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #333; /* Koyu gri */
+            color: #fff; /* Beyaz metin */
+        }
+
+        /* Bilgi Kartları */
+        .info-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9; /* Açık gri */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #000; /* Siyah başlık */
+        }
+
+        .card p {
+            color: #555; /* Gri metin */
+        }
+
+        @media (max-width: 768px) {
+            .info-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Reklam İzleyerek Kazan</h1>
+    </header>
+
+    <!-- Ana İçerik -->
+    <div class="container">
+
+        <!-- Reklam Alanı -->
+        <div class="ad-section">
+            <h2>Bugünün Reklamı</h2>
+            <iframe src="https://example.com/ad"></iframe>
+            <br>
+            <button class="btn" onclick="watchAd()">Reklamı İzle ve Puan Kazan</button>
+        </div>
+
+        <!-- Bilgilendirme Kartları -->
+        <div class="info-section">
+            <div class="card">
+                <h3>Nasıl Çalışır?</h3>
+                <p>Reklam izleyerek kolayca puan kazanabilir ve ödüller alabilirsiniz!</p>
+            </div>
+            <div class="card">
+                <h3>Ödüller</h3>
+                <p>Kazandığınız puanlarla hediye kartları veya nakit para çekebilirsiniz.</p>
+            </div>
+            <div class="card">
+                <h3>Güvenli ve Kolay</h3>
+                <p>Sistemimiz tamamen güvenlidir ve kullanıcı dostudur.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Reklam izleme işlevi
+        function watchAd() {
+            alert("Reklam başladı. Lütfen tamamlanmasını bekleyin...");
+            setTimeout(() => {
+                alert("Reklam tamamlandı! Puan kazandınız.");
+            }, 30000); // 30 saniyelik reklam süresi
+        }
+    </script>
+
+</body>
+</html>
