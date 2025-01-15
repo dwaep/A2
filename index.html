@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdCashFlow</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #f7f7f7, #e6e6e6);
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #ffcc00;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .ad-banner {
+            display: inline-block;
+            width: 22%;
+            margin: 10px 1%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .ad-image {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #ffcc00;
+            color: #333;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover {
+            background-color: #e6b800;
+        }
+
+        .video-container {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 600px;
+            background-color: #000;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .ad-banner {
+                width: 45%; /* Daha küçük ekranlarda daha büyük bannerlar */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ad-banner {
+                width: 90%; /* Mobil cihazlarda tam genişlik */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🇹🇷 TR_EasyCashbot Community - MoneyBOT 1.1</h1>
+    </div>
+
+    <div class="content">
+        <div>
+            <!-- Üstteki 4 reklam bannerları -->
+            <div class="ad-banner">
+                <img src="https://via.placeholder.com/600x300" alt="Ad Banner" class="ad-image">
+            </div>
+            <div class="ad-banner">
+                <img src="https://via.placeholder.com/600x300" alt="Ad Banner" class="ad-image">
+            </div>
+            <div class="ad-banner">
+                <img src="https://via.placeholder.com/600x300" alt="Ad Banner" class="ad-image">
+            </div>
+            <div class="ad-banner">
+                <img src="https://via.placeholder.com/600x300" alt="Ad Banner" class="ad-image">
+            </div>
+        </div>
+        
+        <p>Aşağıdaki düğmeye tıklayın 👇</p>
+        <a href="#video" class="button">REKLAMLARI İZLEYİN</a>
+    </div>
+
+    <div id="video" class="video-container">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+    </div>
+
+    <div class="content">
+        <div>
+            <!-- Alttaki 3 reklam bannerları -->
+            <div class="ad-banner">
+                <img src="https://via.placeholder.com/600x300" alt="Ad Banner" class="ad-image">
+            </div>
+            <div class="ad-banner">
+                <img src="https://via.placeholder.com/600x300" alt="Ad Banner" class="ad-image">
+            </div>
+            <div class="ad-banner">
+                <img src="https://via.placeholder.com/600x300" alt="Ad Banner" class="ad-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Mevcut ödeme oranı: 1 reklam için ₺0,20 ila ₺0,80 arasındadır</p>
+        <p>Türkiye, tarihî mirası ve kültürel zenginlikleriyle dünyanın en güzel ülkelerinden biridir. Her köşesi tarih kokan bu topraklar, misafirperverliğiyle ünlüdür!</p>
+    </div>
+
+</body>
+</html>
